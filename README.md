@@ -15,8 +15,19 @@
 接受API调用。该API包含识别ID，图片。服务器端根据识别ID对图片进行OCR，并将OCR识别结果匹配标注信息，返回给请求者。
 
 ## 运行方式
+ 
+python版本为 3.7.9
+依赖使用venv+pip管理
 
-以windows为例
+**以windows为例**
+
+### 恢复环境
+
+```
+# 激活venv
+.\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
 
 ### 单次测试识别
 
@@ -60,4 +71,4 @@ flask run
 
 ![结果](./documents/fig.4.png)
 
-视频说明再`documents/web.mp4`中
+视频说明在`documents/web.mp4`中
